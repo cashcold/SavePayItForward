@@ -1,0 +1,96 @@
+.register{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(76, 120, 216, 0.212); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../../pic/cylinderbackground_959424.jpg'); */
+    background-position: center;
+    background-size: cover;
+}
+
+
+.registerLogo img{
+    width: 200px;
+}
+.registerLogo{
+    margin-top: 30px;
+    display: flex;
+}
+.formMain table tr{
+    margin: 20px;
+}
+.formMain table label{
+    margin: 20px;
+}
+.formMain table td{
+    margin: 20px;
+}
+.formMain{
+    margin-left: 7%;
+    margin-top: 30px;
+}
+.formMain input{
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+.upfontLine{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+.upfontLine2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lastUpFont{
+    display: flex;
+}
+.lastUpFont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lastUp{
+    display: flex;
+}
+.lastUp p{
+    margin: 10px;
+}
+.register{
+    margin: 40px 0;
+    background: rgb(255,214,23);
+    background: linear-gradient(90deg, rgba(255,214,23,1) 21%, rgba(228,193,35,1) 39%, rgba(144,132,83,1) 66%);
+    height: 800px;
+}
+.formMain input{
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid white;
+}
+input:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 500px){
+    .registerLogo h1{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+   
+    .formMain input{
+        width: 300px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    .lastUpFont{
+        margin: 30px;
+    }
+}

@@ -1,0 +1,192 @@
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8)
+}
+.mainNavbar{
+    margin-top: 1.5rem;
+}
+.logo img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+.main-nav a{
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    color: white;
+    
+}
+.main-nav a:hover{
+    background: rgb(255,214,23);
+        background: linear-gradient(90deg, rgba(255,214,23,1) 21%, rgba(228,193,35,1) 39%, rgba(144,132,83,1) 66%);
+    color: white;
+    font-size: bold;
+    border-bottom: 2px solid white;
+}
+.header{
+    padding: 20px;
+    margin-top: -1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+   
+}
+.main-nav{
+    width: 100%;
+    height: auto;
+    background: rgb(255,214,23);
+background: linear-gradient(90deg, rgba(255,214,23,1) 21%, rgba(228,193,35,1) 39%, rgba(144,132,83,1) 66%);
+}
+.header h1{
+    color: green;
+}
+.socailIcons i{
+    padding: 0 1rem;
+}
+.socailIcons i:hover{
+    background: rgb(255,214,23);
+    background: linear-gradient(90deg, rgba(255,214,23,1) 21%, rgba(228,193,35,1) 39%, rgba(144,132,83,1) 66%);
+
+    color: white;
+    cursor: pointer;
+}
+.loginInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 20px;
+    grid-gap: 10px;
+    display: none;
+}
+.loginInfoWeb{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 20px;
+    grid-gap: 10px;
+}
+
+
+
+.toggleIcon{
+    display: none;
+}
+.logo{
+    display: flex;
+}
+.logo h2{
+    padding: .9rem;
+    letter-spacing: 5px;
+    animation: type 3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes type{
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 37ch;
+    }
+}
+.mobileLogo{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    .main-nav ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .toogleBtn{
+        display: block;
+        margin-left: 25rem;
+    }
+    .header{
+        padding: 0.8rem 0;
+    }
+    .header h1{
+        color: green;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .socailIcons i{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .toggleIcon{
+        display: block;
+    }
+    .nav-links{
+        display: none;;
+    }
+    .logo img{
+        padding: 1rem;
+        width: 80px;
+        border-radius: 10px;
+    }
+    .toggleIcon img{
+        width: 80px;
+        padding: 1rem;
+    }
+    .main-nav{
+        margin-left: -15px;
+        width: 110%;
+        height: auto;
+        background-color: rgba(17, 17, 148, 0.815);
+    }
+    .loginInfo{
+        background-color: rgba(17, 17, 148, 0.815);
+        width: 100%;
+        height: 50px;
+    }
+    .socailIcons{
+        display: none;
+    }
+    .loginInfoWeb{
+        display: none;
+    }
+    .loginInfo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .welcomeText{
+        font-size: 2rem;
+        font-family: monospace;
+        font-size: bold;
+    }
+    .mainNavbar .logo{
+        margin-left: -0.2rem;
+    }
+    .logo h2{
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        letter-spacing: 3px;
+    }
+    .toggleIconfA{
+        margin-left: -30px;
+        padding: 1rem;
+    }
+    .mobileLogo{
+        display: block;
+    }
+    .mobileLogo img{
+        width: 100%;
+        margin-top: -30px;
+    }
+    .logo img{
+        display: none;
+    }
+    
+}

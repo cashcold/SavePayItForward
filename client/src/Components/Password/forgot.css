@@ -1,0 +1,32 @@
+
+.recoverInput input{
+    margin-left: 30px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.passwordForgot{
+    margin: 40px 0;
+}
+.mainPassword h1{
+    margin: 40px 0;
+}
+.recoverInput{
+    margin: 20px 0;
+}
+@media screen and (max-width: 500px){
+    .mainPassword h1{
+        font-size: 18px;
+    }
+   
+    .recoverInput input{
+        margin-left: 0px;
+        width: 200px;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+}
